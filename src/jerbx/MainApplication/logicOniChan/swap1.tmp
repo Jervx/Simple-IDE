@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="455.0" prefWidth="1141.0" style="-fx-background-color: rgb(220,220,220);" stylesheets="@swap.tmp " xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="jerbx.MainApplication.logicOniChan.mainSystem">
+    <children>
+        <GridPane layoutX="239.0" prefHeight="455.0" prefWidth="906.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="239.0" AnchorPane.rightAnchor="-4.0" AnchorPane.topAnchor="0.0">
+            <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            </columnConstraints>
+            <rowConstraints>
+                <RowConstraints minHeight="300.0" prefHeight="20.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            </rowConstraints>
+            <children>
+                <TextArea fx:id="textEditor" prefHeight="455.0" prefWidth="554.0" promptText="Create or Open a file">
+                    <font>
+                        <Font name="Roboto" size="15.0" />
+                    </font>
+                </TextArea>
+                <TextArea fx:id="Output" editable="false" prefHeight="144.0" prefWidth="906.0" promptText="Logs Will Show Here" GridPane.rowIndex="1">
+                    <font>
+                        <Font name="Roboto" size="15.0" />
+                    </font>
+                </TextArea>
+            </children>
+        </GridPane>
+        <ScrollPane prefHeight="400.0" prefWidth="239.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
+            <content>
+                <AnchorPane fx:id="panel" minHeight="0.0" minWidth="0.0" prefHeight="222.0" prefWidth="233.0">
+                    <children>
+                        <Button fx:id="runFile" layoutX="14.0" layoutY="5.0" mnemonicParsing="false" onAction="#compileRun" prefHeight="26.0" prefWidth="203.0" styleClass="compileBtn" text="Compile &amp; Run ↯" textFill="#ffffff00">
+                            <font>
+                                <Font name="Consolas" size="13.0" />
+                            </font>
+                        </Button>
+                        <Button id="fileBtn" fx:id="openFile" layoutX="14.0" layoutY="80.0" mnemonicParsing="false" onAction="#openFile" prefHeight="26.0" prefWidth="202.0" text="Open File  ⋈ " textFill="WHITE">
+                            <font>
+                                <Font name="Roboto Light" size="12.0" />
+                            </font></Button>
+                        <Label layoutX="10.0" layoutY="170.0" prefHeight="15.0" prefWidth="209.0" text="Hover &amp; Right Click (To Remove File)" textFill="#4e7262" wrapText="true">
+                            <font>
+                                <Font name="Roboto Light" size="13.0" />
+                            </font></Label>
+                        <Button id="fileBtn" fx:id="createC" layoutX="14.0" layoutY="47.0" mnemonicParsing="false" onAction="#createFile" prefHeight="26.0" prefWidth="202.0" text="Create File  ⎗" textFill="WHITE">
+                            <font>
+                                <Font name="Roboto Light" size="12.0" />
+                            </font>
+                        </Button>
+                        <Line endX="121.0" layoutX="114.0" layoutY="194.0" startX="-112.0" stroke="#bcbcbc" />
+                        <Line endX="119.0" layoutX="115.0" layoutY="40.0" startX="-112.0" stroke="#dddddd" />
+                        <Line endX="121.0" layoutX="114.0" layoutY="118.0" startX="-112.0" stroke="#bcbcbc" />
+                        <Line endX="121.0" layoutX="114.0" layoutY="162.0" startX="-112.0" stroke="#bcbcbc" />
+                        <Button id="fontBtn" fx:id="openFile1" layoutX="119.0" layoutY="127.0" mnemonicParsing="false" onAction="#increaseFont" prefHeight="26.0" prefWidth="46.0" text="⇧ " textFill="WHITE">
+                            <font>
+                                <Font name="Roboto Light" size="12.0" />
+                            </font>
+                        </Button>
+                        <Button id="fontBtn" fx:id="openFile11" layoutX="169.0" layoutY="127.0" mnemonicParsing="false" onAction="#decreaseFont" prefHeight="27.0" prefWidth="47.0" text="⇩" textFill="WHITE">
+                            <font>
+                                <Font name="Consolas" size="14.0" />
+                            </font>
+                        </Button>
+                        <Label layoutX="11.0" layoutY="133.0" prefHeight="15.0" prefWidth="99.0" text="Adjust Font Size" textFill="#6f6e6e" wrapText="true">
+                            <font>
+                                <Font name="Roboto Light" size="13.0" />
+                            </font>
+                        </Label>
+                        <Circle fx:id="sirkol" fill="#852d7300" layoutX="108.0" layoutY="206.0" radius="3.0" stroke="TRANSPARENT" strokeType="INSIDE" />
+                    </children>
+                </AnchorPane>
+            </content>
+        </ScrollPane>
+    </children>
+</AnchorPane>

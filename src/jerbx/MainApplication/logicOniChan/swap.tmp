@@ -1,0 +1,47 @@
+.fileObject{
+    -fx-background-color: #5c1c33;
+    -fx-text-fill:white;
+    -fx-font-size:12px;
+    -fx-border-radius:5px;
+}
+
+.fileObject:hover{
+    -fx-background-color: #6b3348;
+    -fx-text-fill:white;
+    -fx-font-size:12px;
+    -fx-border-radius:5px;
+}
+
+#fileBtn{-fx-background-color: #1a292e;}
+#fileBtn:hover{-fx-background-color: #263940;}
+
+#fontBtn{-fx-background-color: #1a292e;}
+#fontBtn:hover{-fx-background-color: #263940;}
+
+#fileObject{
+    -fx-background-color: #421626;
+    -fx-text-fill:white;
+}
+
+.compileBtn{
+    -fx-text-fill:white;
+    -fx-background-color:#54324d;
+}
+
+.compileBtn:hover{
+    -fx-background-color:#42273d;
+}
+
+.text-area {
+    -fx-font-family: 'Consolas','Roboto','Monaco';
+    -fx-font-weight:600;
+    -fx-font-size:15px;
+    -fx-text-fill:#522f80;
+    -fx-border-color:#f5f8ff;
+}
+
+.text-area {
+    -fx-background-insets: 0;
+    -fx-font-size:15px;
+    -fx-background-color: transparent, white, transparent, white;
+}
